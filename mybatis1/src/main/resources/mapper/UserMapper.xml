@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaishengit.mapper.UserMapper">
+
+    <cache/>
+
+ <!--   <resultMap id="userMap" type="com.kaishengit.entity.User">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="address" property="address"/>
+        <result column="tel" property="tel"/>
+    </resultMap>-->
+
+    <select id="page" resultType="User" parameterType="map">
+        select * from t_user limit #{start}, #{size}
+    </select>
+
+    <select id="page2" resultType="User">
+        select * from t_user limit #{param1}, #{param2}
+    </select>
+
+    <select id="page3" resultType="User">
+        select * from t_user limit #{start}, #{size}
+    </select>
+
+
+    <select id="findById" parameterType="int" resultType="User">
+        select * from t_user where id = #{id} 
+    </select>
+
+    <select id="findAll" resultType="User">
+        select * from t_user
+    </select>
+
+    <insert id="save" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into t_user (name,address,tel) value (#{name},#{address},#{tel});
+    </insert>
+    
+    <update id="update" parameterType="User">
+        update t_user set name = #{name},address = #{address},tel=#{tel} where id = #{id}
+    </update>
+
+    <delete id="delById">
+        delete from t_user where id=#{id}
+
+    </delete>
+
+</mapper>
