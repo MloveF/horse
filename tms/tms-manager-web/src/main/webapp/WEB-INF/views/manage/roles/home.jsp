@@ -56,17 +56,23 @@
                 <div class="box-body">
                     <table class="table tree">
                         <tbody>
-                        <c:forEach items="${roleList}" var="roles">
-                            <tr>
-                                <td class="td-left">角色名称：<strong>${roles.rolesName}</strong></td>
+                        <c:forEach items="${rolesList}" var="roles">
+                            <tr class="bg-blue">
                                 <td>
-                                    <c:forEach items="${roles.permissionList}" var="permission">
-                                        <i class="fa fa-circle"></i> ${permission.permissionName}
+                                    角色名称：<strong>${roles.rolesName}</strong>
+                                    <span class="pull-right">
+                                            <a style="color: red;" href="/manage/roles/${roles.id}/edit"><i class="fa fa-pencil">编辑</i></a>
+                                            <a style="color: red;" class="delLink" rel="${roles.id}" href="javascript:;"><i class="fa fa-trash">删除</i></a>
+                                        </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <c:forEach items="${roles.permissionList}" var="per">
+                                        <i class="fa fa-circle"></i> ${per.permissionName}
                                     </c:forEach>
                                 </td>
                             </tr>
-
-
                         </c:forEach>
                         </tbody>
                     </table>

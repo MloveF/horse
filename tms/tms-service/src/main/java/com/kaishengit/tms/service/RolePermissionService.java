@@ -45,15 +45,9 @@ public interface RolePermissionService {
      */
     void delPermissionById(Integer id)throws ServiceException;
 
-    /*
-     *查询所有角色
-     * @author 马得草
-     * @date 2018/4/15
-     */
-    List<Role> findAllRole();
-
-
     Permission findPermissionById(Integer id);
 
     void updatePermission(Permission permission,Integer id);
+
+    Object findAllRolesWithPermission();
 }

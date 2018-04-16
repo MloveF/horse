@@ -157,17 +157,6 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     }
 
     /*
-     *查询所有角色
-     * @author 马得草
-     * @date 2018/4/15
-     */
-    @Override
-    public List<Role> findAllRole() {
-        return roleMapper.findAllRole();
-    }
-
-
-    /*
      *根据Id查找对应的permission对象 是用来编辑的
      * @author 马得草
      * @date 2018/4/16
@@ -190,6 +179,16 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         permissionMapper.updateByPrimaryKeySelective(permission);
         logger.info("编辑权限 {}", permission);
 
+    }
+
+    /*
+     *查询所有角色并查出角色拥有的权限列表
+     * @author 马得草
+     * @date 2018/4/16
+     */
+    @Override
+    public Object findAllRolesWithPermission() {
+        return roleMapper.findAllWithPermission();
     }
 
 

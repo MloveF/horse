@@ -149,18 +149,36 @@
     </if>
   </select>
 
-    <select id="findAllRole" resultMap="findAllRoles">
-        SELECT role.*,permission_name from role INNER JOIN role_premission rp ON role.id = rp.role_id INNER JOIN permission ON rp.premission_id = permission.id
-     </select>
+    <select id="findAllWithPermission" resultMap="rolesWithPermissionMap">
+           SELECT
+            role.*, permission.id AS permissionId,
+            permission.create_time AS permissionCreateTime,
+            permission_code,
+            permission_name,
+            permission_type,
+            permission_url,
+            permission.update_time AS permissionUpdateTime,
+            parent_id
+        FROM
+            role
+        LEFT JOIN role_premission ON role.id = role_premission.role_id
+        LEFT JOIN permission ON permission.id = role_premission.premission_id
+        order by role.id desc
+    </select>
 
-      <resultMap id="findAllRoles" type="Role">
-        <result column="roles_name" property="rolesName"/>
-        <result column="roles_code" property="rolesCode"/>
-        <collection property="permissionList" ofType="Permission">
-          <result column="permission_name" property="permissionName"/>
-        </collection>
-      </resultMap>
 
+  <resultMap id="rolesWithPermissionMap" type="Role" extends="BaseResultMap">
+    <collection property="permissionList" ofType="Permission">
+      <id property="id" column="permissionId"/>
+      <result property="parentId" column="parent_id"/>
+      <result property="permissionCode" column="permission_code"/>
+      <result property="permissionName" column="permission_name"/>
+      <result property="permissionType" column="permission_type"/>
+      <result property="permissionUrl" column=" permission_url"/>
+      <result property="createTime" column="permissionCreateTime"/>
+      <result property="updateTime" column="permissionUpdateTime"/>
+    </collection>
+  </resultMap>
 
 
     <update id="updateByExampleSelective" parameterType="map">

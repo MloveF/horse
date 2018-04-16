@@ -16,7 +16,7 @@ public class Role implements Serializable {
                 ", rolesName='" + rolesName + '\'' +
                 ", rolesCode='" + rolesCode + '\'' +
                 ", createTime=" + createTime +
-                ", permission=" + permission +
+                ", permission=" + permissionList +
                 ", updateTime=" + updateTime +
                 '}';
     }
@@ -38,14 +38,14 @@ public class Role implements Serializable {
      */
     private Date createTime;
 
-    private List<Permission> permission;
+    private List<Permission> permissionList;
 
-    public List<Permission> getPermission() {
-        return permission;
+    public List<Permission> getPermissionList() {
+        return permissionList;
     }
 
-    public void setPermission(List<Permission> permission) {
-        this.permission = permission;
+    public void setPermissionList(List<Permission> permissionList) {
+        this.permissionList = permissionList;
     }
 
     public static long getSerialVersionUID() {

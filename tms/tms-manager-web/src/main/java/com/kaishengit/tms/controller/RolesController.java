@@ -31,16 +31,8 @@ public class RolesController {
 
     @GetMapping
     public String  home(Model model) {
-
-        List<Role> roleList = rolePermissionService.findAllRole();
-        model.addAttribute("roleList",roleList);
-
-        for (Role role : roleList){
-            System.out.println(role);
-        }
-
+        model.addAttribute("rolesList",rolePermissionService.findAllRolesWithPermission());
         return "manage/roles/home";
-
     }
 
     @GetMapping("/new")
