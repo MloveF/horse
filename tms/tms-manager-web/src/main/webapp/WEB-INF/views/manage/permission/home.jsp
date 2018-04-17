@@ -115,11 +115,6 @@
             })
         });
 
-        $(".edit").click(function () {
-            var id = $(this).alert("re")
-            window.location.href="/manage/permission/"+ id+"/edit";
-        })
-
     });
 </script>
 </body>

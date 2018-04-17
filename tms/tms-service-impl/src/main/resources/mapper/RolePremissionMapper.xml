@@ -91,7 +91,8 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.kaishengit.tms.entity.RolePremissionKey">
+
+    <insert id="insert" parameterType="com.kaishengit.tms.entity.RolePremissionKey">
     insert into role_premission (role_id, premission_id)
     values (#{roleId,jdbcType=INTEGER}, #{premissionId,jdbcType=INTEGER})
   </insert>

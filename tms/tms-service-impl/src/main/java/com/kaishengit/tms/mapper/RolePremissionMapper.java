@@ -23,4 +23,5 @@ public interface RolePremissionMapper {
     int updateByExampleSelective(@Param("record") RolePremissionKey record, @Param("example") RolePremissionExample example);
 
     int updateByExample(@Param("record") RolePremissionKey record, @Param("example") RolePremissionExample example);
+
 }

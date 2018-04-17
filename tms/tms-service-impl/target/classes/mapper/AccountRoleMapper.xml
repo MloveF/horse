@@ -2,8 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kaishengit.tms.mapper.AccountRoleMapper">
   <resultMap id="BaseResultMap" type="com.kaishengit.tms.entity.AccountRoleKey">
-    <id column="role_id" jdbcType="INTEGER" property="roleId" />
     <id column="account_id" jdbcType="INTEGER" property="accountId" />
+    <id column="role_id" jdbcType="INTEGER" property="roleId" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -64,7 +64,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    role_id, account_id
+    account_id, role_id
   </sql>
   <select id="selectByExample" parameterType="com.kaishengit.tms.entity.AccountRoleExample" resultMap="BaseResultMap">
     select
@@ -82,8 +82,8 @@
   </select>
   <delete id="deleteByPrimaryKey" parameterType="com.kaishengit.tms.entity.AccountRoleKey">
     delete from account_role
-    where role_id = #{roleId,jdbcType=INTEGER}
-      and account_id = #{accountId,jdbcType=INTEGER}
+    where account_id = #{accountId,jdbcType=INTEGER}
+      and role_id = #{roleId,jdbcType=INTEGER}
   </delete>
   <delete id="deleteByExample" parameterType="com.kaishengit.tms.entity.AccountRoleExample">
     delete from account_role
@@ -92,25 +92,25 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.kaishengit.tms.entity.AccountRoleKey">
-    insert into account_role (role_id, account_id)
-    values (#{roleId,jdbcType=INTEGER}, #{accountId,jdbcType=INTEGER})
+    insert into account_role (account_id, role_id)
+    values (#{accountId,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.kaishengit.tms.entity.AccountRoleKey">
     insert into account_role
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="roleId != null">
-        role_id,
-      </if>
       <if test="accountId != null">
         account_id,
       </if>
+      <if test="roleId != null">
+        role_id,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="roleId != null">
-        #{roleId,jdbcType=INTEGER},
-      </if>
       <if test="accountId != null">
         #{accountId,jdbcType=INTEGER},
+      </if>
+      <if test="roleId != null">
+        #{roleId,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -123,11 +123,11 @@
   <update id="updateByExampleSelective" parameterType="map">
     update account_role
     <set>
-      <if test="record.roleId != null">
-        role_id = #{record.roleId,jdbcType=INTEGER},
-      </if>
       <if test="record.accountId != null">
         account_id = #{record.accountId,jdbcType=INTEGER},
+      </if>
+      <if test="record.roleId != null">
+        role_id = #{record.roleId,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -136,8 +136,8 @@
   </update>
   <update id="updateByExample" parameterType="map">
     update account_role
-    set role_id = #{record.roleId,jdbcType=INTEGER},
-      account_id = #{record.accountId,jdbcType=INTEGER}
+    set account_id = #{record.accountId,jdbcType=INTEGER},
+      role_id = #{record.roleId,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>

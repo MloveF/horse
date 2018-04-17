@@ -166,6 +166,47 @@
         order by role.id desc
     </select>
 
+  <select id="findById" resultType="com.kaishengit.tms.entity.Role">
+       SELECT
+        *
+    FROM
+        role
+    WHERE id = #{id}
+  </select>
+  <select id="findByIdWithPermission" resultMap="rolesWithPermissionMap">
+        SELECT
+            role.*, permission.id AS permissionId,
+            permission.create_time AS permissionCreateTime,
+            permission_code,
+            permission_name,
+            permission_type,
+            permission_url,
+            permission.update_time AS permissionUpdateTime,
+            parent_id
+        FROM
+            role
+        LEFT JOIN role_premission ON role.id = role_premission.role_id
+        LEFT JOIN permission ON permission.id = role_premission.premission_id
+        where role.id = #{id}
+  </select>
+
+  <select id="findRolesByAccountId" resultType="com.kaishengit.tms.entity.Role">
+      SELECT
+          *
+      FROM
+          role
+        WHERE
+          id IN (
+            SELECT
+                role_id
+            FROM
+                account_role
+            WHERE
+                account_id = #{accountId}
+        )
+
+  </select>
+
 
   <resultMap id="rolesWithPermissionMap" type="Role" extends="BaseResultMap">
     <collection property="permissionList" ofType="Permission">
@@ -242,3 +283,4 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>
+

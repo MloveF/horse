@@ -2,6 +2,7 @@ package com.kaishengit.tms.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * account
@@ -27,12 +28,22 @@ public class Account implements Serializable {
 
     private Date createTime;
 
+    public List<Role> getRolesList() {
+        return rolesList;
+    }
+
+    public void setRolesList(List<Role> rolesList) {
+        this.rolesList = rolesList;
+    }
+
     private Date updateTime;
 
     /**
      * 状态
      */
     private String accountState;
+
+    private List<Role> rolesList;
 
     private static final long serialVersionUID = 1L;
 

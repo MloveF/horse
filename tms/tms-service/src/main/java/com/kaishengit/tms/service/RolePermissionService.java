@@ -45,9 +45,67 @@ public interface RolePermissionService {
      */
     void delPermissionById(Integer id)throws ServiceException;
 
+    /*
+     *根据id查找权限
+     * @author 马得草
+     * @date 2018/4/16
+     */
     Permission findPermissionById(Integer id);
 
+    /*
+     *编辑权限
+     * @author 马得草
+     * @date 2018/4/16
+     */
     void updatePermission(Permission permission,Integer id);
 
-    Object findAllRolesWithPermission();
+    /*
+     *查询所有的角色并加载角色拥有的权限列表
+     * @author 马得草
+     * @date 2018/4/16
+     */
+    List<Role> findAllRolesWithPermission();
+
+    /*
+     *查找所有权限
+     * @author 马得草
+     * @date 2018/4/16
+     */
+    List<Role> findAllRoles();
+
+
+    /*
+     *根据主键查找角色
+     * @author 马得草
+     * @date 2018/4/17
+     */
+   Role findById(Integer id);
+
+    /**
+     * 根据角色ID查询角色对象及其拥有的权限
+     * @param id
+     * @return
+     */
+    Role findRolesWithPermissionById(Integer id);
+
+    /*
+     *修改角色对象
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    void updateRoles(Role roles, Integer[] permissionId);
+
+    /*
+     *根据ID删除角色
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    void delRolesById(Integer id);
+
+    /*
+     *根据accountID查询对应的角色集合
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    List<Role> findRolesByAccountId(Integer id);
 }

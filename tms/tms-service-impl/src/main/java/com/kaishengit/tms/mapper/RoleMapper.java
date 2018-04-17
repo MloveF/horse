@@ -1,5 +1,6 @@
 package com.kaishengit.tms.mapper;
 
+import com.kaishengit.tms.entity.Permission;
 import com.kaishengit.tms.entity.Role;
 import com.kaishengit.tms.entity.RoleExample;
 import java.util.List;
@@ -29,4 +30,10 @@ public interface RoleMapper {
     int updateByPrimaryKey(Role record);
 
     List<Role> findAllWithPermission();
+
+    Role findById(Integer id);
+
+    Role findByIdWithPermission(Integer id);
+
+    List<Role> findRolesByAccountId(Integer id);
 }

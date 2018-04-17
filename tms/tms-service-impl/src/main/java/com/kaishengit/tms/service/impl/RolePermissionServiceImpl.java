@@ -4,6 +4,7 @@ import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
 import com.kaishengit.tms.entity.*;
 import com.kaishengit.tms.exception.ServiceException;
+import com.kaishengit.tms.mapper.AccountRoleMapper;
 import com.kaishengit.tms.mapper.PermissionMapper;
 import com.kaishengit.tms.mapper.RoleMapper;
 import com.kaishengit.tms.mapper.RolePremissionMapper;
@@ -35,6 +36,9 @@ public class RolePermissionServiceImpl implements RolePermissionService {
 
     @Autowired
     private RolePremissionMapper rolePremissionMapper;
+
+    @Autowired
+    private AccountRoleMapper accountRoleMapper;
 
     /*
      *新增权限
@@ -187,8 +191,105 @@ public class RolePermissionServiceImpl implements RolePermissionService {
      * @date 2018/4/16
      */
     @Override
-    public Object findAllRolesWithPermission() {
+    public  List<Role> findAllRolesWithPermission() {
         return roleMapper.findAllWithPermission();
+    }
+
+    /*
+     *查找所有角色
+     * @author 马得草
+     * @date 2018/4/16
+     */
+    @Override
+    public List<Role> findAllRoles() {
+        RoleExample roleExample = new RoleExample();
+        return roleMapper.selectByExample(roleExample);
+    }
+
+    @Override
+    public Role findById(Integer id) {
+        return roleMapper.findById(id);
+    }
+
+
+    /**
+     * 根据角色ID查询角色对象及其拥有的权限
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public Role findRolesWithPermissionById(Integer id) {
+        return roleMapper.findByIdWithPermission(id);
+    }
+
+    /*
+     *修改角色对象
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void updateRoles(Role roles, Integer[] permissionId) {
+
+        //将原来角色和权限的对应关系删除
+        RolePremissionExample rolePremissionExample = new RolePremissionExample();
+        rolePremissionExample.createCriteria().andRoleIdEqualTo(roles.getId());
+
+        rolePremissionMapper.deleteByExample(rolePremissionExample);
+
+        //重新创建角色和权限的对应关系
+        for(Integer perId : permissionId) {
+            RolePremissionKey rolePremissionKey = new RolePremissionKey();
+            rolePremissionKey.setRoleId(roles.getId());
+            rolePremissionKey.setPremissionId(perId);
+            rolePremissionMapper.insert(rolePremissionKey);
+        }
+
+        roleMapper.updateByPrimaryKeySelective(roles);
+        logger.info("修改角色 {}",roles);
+    }
+
+    /*
+     *根据ID删除角色
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void delRolesById(Integer id) throws ServiceException {
+        //查询是否被账号引用 如果引用则删除失败
+        AccountRoleExample accountRoleExample = new AccountRoleExample();
+        accountRoleExample.createCriteria().andRoleIdEqualTo(id);
+
+        List<AccountRoleKey> accountRoleKeys = accountRoleMapper.selectByExample(accountRoleExample);
+
+        if(accountRoleKeys != null && !accountRoleKeys.isEmpty()) {
+            throw new ServiceException("referenced Delete failed");
+        }
+
+        //删除角色和权限的关系记录
+        RolePremissionExample rolePremissionExample = new RolePremissionExample();
+        rolePremissionExample.createCriteria().andRoleIdEqualTo(id);
+
+        rolePremissionMapper.deleteByExample(rolePremissionExample);
+
+        //删除角色
+        Role role = roleMapper.selectByPrimaryKey(id);
+        roleMapper.deleteByPrimaryKey(id);
+
+        logger.info("删除角色 {}",role);
+    }
+
+    /*
+     *根据accountID查询对应的角色集合
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    @Override
+    public List<Role> findRolesByAccountId(Integer id) {
+
+        return roleMapper.findRolesByAccountId(id);
     }
 
 

@@ -109,7 +109,7 @@
       #{accountPassword,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{accountState,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.kaishengit.tms.entity.Account">
+  <insert id="insertSelective" parameterType="com.kaishengit.tms.entity.Account" useGeneratedKeys="true" keyProperty="id">
     insert into account
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -164,7 +164,60 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map">
+
+    <select id="findAllWithRolesByQueryParam" resultMap="accountWithRolesMap">
+       SELECT
+              account.*, role.id AS rolesId,
+              role.roles_code,
+              role.roles_name,
+              role.create_time AS rolesCreateTime,
+              role.update_time AS rolesUpdateTime
+              FROM
+              account
+              LEFT JOIN account_role ON account.id = account_role.account_id
+              LEFT JOIN role ON role.id = account_role.role_id
+      <choose>
+        <when test="rolesId != null and rolesId != 0">
+          inner JOIN (
+          SELECT
+          id
+          FROM
+          account
+          INNER JOIN account_role ON account_role.account_id = account.id
+          <where>
+            account_role.role_id = #{rolesId}
+            <if test="nameMobile != null and nameMobile != ''">
+              and( (account.account_name like concat('%',#{nameMobile},'%'))
+              or
+              (account.account_mobile like concat('%',#{nameMobile},'%')))
+            </if>
+          </where>
+          ) AS temp ON account.id = temp.id
+        </when>
+        <otherwise>
+          <where>
+            <if test="nameMobile != null and nameMobile != ''">
+              (account.account_name like concat('%',#{nameMobile},'%'))
+              or
+              (account.account_mobile like concat('%',#{nameMobile},'%'))
+            </if>
+          </where>
+        </otherwise>
+      </choose>
+      order by account.id desc
+    </select>
+
+  <resultMap id="accountWithRolesMap" type="Account" extends="BaseResultMap">
+    <collection property="rolesList" ofType="Role">
+      <id property="id" column="rolesId"/>
+      <result property="updateTime" column="rolesUpdateTime"/>
+      <result property="createTime" column="rolesCreateTime"/>
+      <result property="rolesCode" column="roles_code"/>
+      <result property="rolesName" column="roles_name"/>
+    </collection>
+  </resultMap>
+
+    <update id="updateByExampleSelective" parameterType="map">
     update account
     <set>
       <if test="record.id != null">

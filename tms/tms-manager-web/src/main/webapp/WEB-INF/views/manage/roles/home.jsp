@@ -62,7 +62,7 @@
                                     角色名称：<strong>${roles.rolesName}</strong>
                                     <span class="pull-right">
                                             <a style="color: red;" href="/manage/roles/${roles.id}/edit"><i class="fa fa-pencil">编辑</i></a>
-                                            <a style="color: red;" class="delLink" rel="${roles.id}" href="javascript:;"><i class="fa fa-trash">删除</i></a>
+                                             <a style="color: red;" class="delLink" rel="${roles.id}" href="javascript:;"><i class="fa fa-trash">删除</i></a>
                                         </span>
                                 </td>
                             </tr>
@@ -88,9 +88,27 @@
 <%@include file="../../include/js.jsp"%>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+<script src="/static/plugins/layer/layer.js"></script>
+
 <script>
     $(function () {
         $('.tree').treegrid();
+        //删除
+        $(".delLink").click(function () {
+            var id = $(this).attr("rel");
+            layer.confirm("确定要删除该角色？",function (index) {
+                layer.close(index);
+                $.get("/manage/roles/"+id+"/del").done(function (result) {
+                    if(result.status == 'success') {
+                        window.history.go(0);
+                    } else {
+                        layer.msg(result.message);
+                    }
+                }).error(function () {
+                    layer.msg("服务器忙");
+                });
+            })
+        });
     });
 </script>
 </body>
