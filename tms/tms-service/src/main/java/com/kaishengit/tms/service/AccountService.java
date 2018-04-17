@@ -1,6 +1,7 @@
 package com.kaishengit.tms.service;
 
 import com.kaishengit.tms.entity.Account;
+import com.kaishengit.tms.entity.AccountLoginLog;
 import com.kaishengit.tms.exception.ServiceException;
 
 import java.util.List;
@@ -51,5 +52,19 @@ public interface AccountService {
      * @date 2018/4/17
      */
     void updateAccount(Account account, Integer[] rolesIds);
+
+    /*
+     *根据电话查找account对象
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    Account findByMobile(String userMobile);
+
+    /*
+     *保存账户登录信息
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    void saveAccountLoginLog(AccountLoginLog accountLoginLog);
 }
 

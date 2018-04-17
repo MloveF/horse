@@ -171,4 +171,32 @@ public class  AccountServiceImpl implements AccountService{
         }
         logger.info("修改账号 {}",account);
     }
+
+    /*
+     *根据电话号码查找account对象
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    @Override
+    public Account findByMobile(String userMobile) {
+        AccountExample accountExample = new AccountExample();
+        accountExample.createCriteria().andAccountMobileEqualTo(userMobile);
+
+        List<Account> accountList = accountMapper.selectByExample(accountExample);
+
+        if(accountList != null && !accountList.isEmpty()) {
+            return accountList.get(0);
+        }
+        return null;
+    }
+
+    /*
+     *保存账户登录信息
+     * @author 马得草
+     * @date 2018/4/17
+     */
+    @Override
+    public void saveAccountLoginLog(AccountLoginLog accountLoginLog) {
+        accountLoginLogMapper.insertSelective(accountLoginLog);
+    }
 }

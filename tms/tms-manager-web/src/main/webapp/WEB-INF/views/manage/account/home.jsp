@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -51,9 +52,11 @@
             <div class="box">
                 <div class="box-header">
                     <div class="box-tools">
+                        <shiro:hasPermission name="account:add">
                         <a href="/manage/account/new" class="btn btn-success btn-sm">
                             <i class="fa fa-plus"></i> 新增账号
                         </a>
+                        </shiro:hasPermission>
                     </div>
                 </div>
                 <div class="box-body">
