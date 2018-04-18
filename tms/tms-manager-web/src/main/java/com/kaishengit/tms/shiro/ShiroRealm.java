@@ -2,16 +2,20 @@ package com.kaishengit.tms.shiro;
 
 import com.kaishengit.tms.entity.Account;
 import com.kaishengit.tms.entity.AccountLoginLog;
+import com.kaishengit.tms.entity.Permission;
+import com.kaishengit.tms.entity.Role;
 import com.kaishengit.tms.service.AccountService;
+import com.kaishengit.tms.service.RolePermissionService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Date;
+import java.util.*;
 
 public class ShiroRealm extends AuthorizingRealm {
 
@@ -20,9 +24,46 @@ public class ShiroRealm extends AuthorizingRealm {
     @Autowired
     private AccountService accountService;
 
+    @Autowired
+    private RolePermissionService rolePermissionService;
+
+    /*
+     *判断角色和权限
+     * @author 马得草
+     * @date 2018/4/18
+     */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        return null;
+
+        //获取当前登陆的对象
+        Account account = (Account) principalCollection.getPrimaryPrincipal();
+        //获取当前登陆的对象拥有的角色
+        List<Role> roleList = rolePermissionService.findRolesByAccountId(account.getId());
+        //获取当前登陆的对象拥有的权限
+        List<Permission> permissionList = new ArrayList<>();
+        for(Role roles : roleList) {
+            List<Permission> permissions = rolePermissionService.findAllPermissionByRolesId(roles.getId());
+            permissionList.addAll(permissions);
+        }
+
+        Set<String> rolesNameSet = new HashSet<>();
+        for(Role roles : roleList) {
+            rolesNameSet.add(roles.getRolesCode());
+        }
+
+        Set<String> permissionNameSet = new HashSet<>();
+        for(Permission permissions : permissionList) {
+            permissionNameSet.add(permissions.getPermissionCode());
+        }
+
+        SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
+
+        //当前用户拥有的角色code值
+        simpleAuthorizationInfo.setRoles(rolesNameSet);
+
+        //当前用户拥有的权限code值
+        simpleAuthorizationInfo.setStringPermissions(permissionNameSet);
+        return simpleAuthorizationInfo;
     }
 
     /*

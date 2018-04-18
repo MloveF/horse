@@ -109,7 +109,7 @@ public class  AccountServiceImpl implements AccountService{
         if(account.getAccountMobile().length() <= 6) {
             password = account.getAccountMobile();
         } else {
-            password = account.getAccountMobile().substring(6);
+            password = account.getAccountMobile().substring(account.getAccountMobile().length()-6,account.getAccountMobile().length());
         }
         //对密码进行MD5加密
         password = DigestUtils.md5Hex(password);
@@ -199,4 +199,29 @@ public class  AccountServiceImpl implements AccountService{
     public void saveAccountLoginLog(AccountLoginLog accountLoginLog) {
         accountLoginLogMapper.insertSelective(accountLoginLog);
     }
+
+    /*
+     *根据accountID删除account对象
+     * @author 马得草
+     * @date 2018/4/18
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void delAccountById(Integer id) throws ServiceException {
+
+        //删除账户和角色的关系记录
+        AccountRoleExample accountRoleExample = new AccountRoleExample();
+        accountRoleExample.createCriteria().andAccountIdEqualTo(id);
+        accountRoleMapper.deleteByExample(accountRoleExample);
+
+        //删除账户
+        Account account = accountMapper.selectByPrimaryKey(id);
+        accountMapper.deleteByPrimaryKey(id);
+
+        logger.info("删除角色 {}",account);
+
+
+    }
+
 }
+

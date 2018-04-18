@@ -109,6 +109,8 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         role.setCreateTime(new Date());
         roleMapper.insertSelective(role);
 
+     if(permissionId != null) {
+
         for(Integer perId : permissionId) {
 
             RolePremissionKey rolePremissionKey = new RolePremissionKey();
@@ -117,6 +119,7 @@ public class RolePermissionServiceImpl implements RolePermissionService {
 
             rolePremissionMapper.insert(rolePremissionKey);
         }
+      }
         logger.info("保存角色 {}",role);
     }
 
@@ -290,6 +293,16 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     public List<Role> findRolesByAccountId(Integer id) {
 
         return roleMapper.findRolesByAccountId(id);
+    }
+
+    /*
+     *根据角色id获取对应的权限集合
+     * @author 马得草
+     * @date 2018/4/18
+     */
+    @Override
+    public List<Permission> findAllPermissionByRolesId(Integer id) {
+        return permissionMapper.findAllByRolesId(id);
     }
 
 

@@ -66,5 +66,13 @@ public interface AccountService {
      * @date 2018/4/17
      */
     void saveAccountLoginLog(AccountLoginLog accountLoginLog);
+
+    /*
+     *很据id删除account对象
+     * @author 马得草
+     * @date 2018/4/18
+     */
+    void delAccountById(Integer id);
+
 }
 

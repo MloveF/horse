@@ -108,4 +108,11 @@ public interface RolePermissionService {
      * @date 2018/4/17
      */
     List<Role> findRolesByAccountId(Integer id);
+
+    /*
+     *根据角色id获取对应的权限集合
+     * @author 马得草
+     * @date 2018/4/18
+     */
+    List<Permission> findAllPermissionByRolesId(Integer id);
 }
