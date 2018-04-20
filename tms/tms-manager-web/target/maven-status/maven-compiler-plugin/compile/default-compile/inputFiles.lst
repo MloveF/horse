@@ -4,5 +4,6 @@ E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\Permissio
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\shiro\CustomerFilterChainDefinition.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\AccountController.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\shiro\ShiroRealm.java
+E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\TicketStoreController.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\HomeController.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\exception\NotFoundException.java

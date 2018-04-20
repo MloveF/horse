@@ -1,3 +1,4 @@
+com\kaishengit\tms\controller\TicketStoreController.class
 com\kaishengit\tms\controller\RolesController.class
 com\kaishengit\tms\shiro\ShiroRealm.class
 com\kaishengit\tms\controller\HomeController.class

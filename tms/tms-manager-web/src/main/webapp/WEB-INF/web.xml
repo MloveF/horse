@@ -38,7 +38,6 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-
     <!--配置中央控制器-->
     <servlet>
         <servlet-name>mvc</servlet-name>

@@ -62,6 +62,7 @@ public class HomeController {
 
         Subject subject = SecurityUtils.getSubject();
 
+        System.out.println(DigestUtils.md5Hex(password));
         //根据账户和密码进行登录
         String requestIp = request.getRemoteAddr();
         UsernamePasswordToken usernamePasswordToken =
@@ -80,13 +81,13 @@ public class HomeController {
 
         }catch (UnknownAccountException | IncorrectCredentialsException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","账号或密码错误");
+            redirectAttributes.addFlashAttribute("message","Account or password error");
         } catch (LockedAccountException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","账号被锁定");
+            redirectAttributes.addFlashAttribute("message","Account locked");
         } catch (AuthenticationException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","账号或密码错误");
+            redirectAttributes.addFlashAttribute("message","Account or password error");
         }
 
         return "redirect:/";

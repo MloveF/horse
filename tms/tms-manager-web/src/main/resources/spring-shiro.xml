@@ -36,11 +36,11 @@
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
 
     <!--5. 开启基于注解的shiro角色以及权限判断-->
-   <!--  <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
-           depends-on="lifecycleBeanPostProcessor"/>
-     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
-         <property name="securityManager" ref="securityManager"/>
-     </bean>-->
+    <!--  <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+            depends-on="lifecycleBeanPostProcessor"/>
+      <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+          <property name="securityManager" ref="securityManager"/>
+      </bean>-->
 
     <!--6. 配置ShiroFilter id必须和web.xml中的filter节点的filter-name相同-->
     <bean id="filterChainDefinition" class="com.kaishengit.tms.shiro.CustomerFilterChainDefinition">
@@ -63,5 +63,4 @@
         <!--访问没有权限的资源跳转的URL-->
         <property name="unauthorizedUrl" value="/401"/>
     </bean>
-
 </beans>

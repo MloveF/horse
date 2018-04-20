@@ -241,12 +241,14 @@ public class RolePermissionServiceImpl implements RolePermissionService {
 
         rolePremissionMapper.deleteByExample(rolePremissionExample);
 
-        //重新创建角色和权限的对应关系
-        for(Integer perId : permissionId) {
-            RolePremissionKey rolePremissionKey = new RolePremissionKey();
-            rolePremissionKey.setRoleId(roles.getId());
-            rolePremissionKey.setPremissionId(perId);
-            rolePremissionMapper.insert(rolePremissionKey);
+        if(permissionId != null) {
+            //重新创建角色和权限的对应关系
+            for(Integer perId : permissionId) {
+                RolePremissionKey rolePremissionKey = new RolePremissionKey();
+                rolePremissionKey.setRoleId(roles.getId());
+                rolePremissionKey.setPremissionId(perId);
+                rolePremissionMapper.insert(rolePremissionKey);
+            }
         }
 
         roleMapper.updateByPrimaryKeySelective(roles);
