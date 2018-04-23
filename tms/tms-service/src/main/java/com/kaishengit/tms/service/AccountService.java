@@ -74,5 +74,12 @@ public interface AccountService {
      */
     void delAccountById(Integer id);
 
+
+    /*
+     *查询所有的账户
+     * @author 马得草
+     * @date 2018/4/21
+     */
+    List<Account> findAllAccount();
 }
 

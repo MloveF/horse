@@ -9,8 +9,8 @@ import java.util.Date;
  */
 public class StoreAccount implements Serializable {
 
-    public static final String ACCOUNT_STATE_NORMAL = "Õý³£";
-    public static final String ACCOUNT_STATE_DISABLE = "½ûÓÃ";
+    public static final String ACCOUNT_STATE_NORMAL = "normal";
+    public static final String ACCOUNT_STATE_DISABLE = "disable";
 
 
     private Integer id;

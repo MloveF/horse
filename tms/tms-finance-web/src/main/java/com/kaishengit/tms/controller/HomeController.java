@@ -77,13 +77,13 @@ public class HomeController {
 
         }catch (UnknownAccountException | IncorrectCredentialsException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","’À∫≈ªÚ√‹¬Î¥ÌŒÛ");
+            redirectAttributes.addFlashAttribute("message","Account or password error");
         } catch (LockedAccountException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","’À∫≈±ªÀ¯∂®");
+            redirectAttributes.addFlashAttribute("message","Account locked");
         } catch (AuthenticationException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","’À∫≈ªÚ√‹¬Î¥ÌŒÛ");
+            redirectAttributes.addFlashAttribute("message","Account or password error");
         }
 
         return "redirect:/";

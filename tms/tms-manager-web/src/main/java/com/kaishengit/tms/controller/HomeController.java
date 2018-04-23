@@ -81,7 +81,7 @@ public class HomeController {
 
         }catch (UnknownAccountException | IncorrectCredentialsException ex) {
             ex.printStackTrace();
-            redirectAttributes.addFlashAttribute("message","Account or password error");
+            redirectAttributes.addFlashAttribute("message","’À∫≈√‹¬Î");
         } catch (LockedAccountException ex) {
             ex.printStackTrace();
             redirectAttributes.addFlashAttribute("message","Account locked");

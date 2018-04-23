@@ -2,9 +2,11 @@ E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\AccountMappe
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\RolePremissionMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\TicketStoreMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\StoreAccountMapper.java
+E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\util\shiro\ShiroUtil.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\service\impl\TicketServiceImpl.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\AccountRoleMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\PermissionMapper.java
+E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\TicketInRecordMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\TicketMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\RoleMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\StoreLoginLogMapper.java

@@ -97,8 +97,6 @@
 <script>
     $(function () {
 
-
-
         $("#saveBtn").click(function () {
             $("#saveForm").submit();
         });
@@ -139,43 +137,35 @@
 
 
 
-
-        //初始化web Uploader
+        // 初始化Web Uploader
         var uploader = WebUploader.create({
             // 选完文件后，是否自动上传。
             auto: true,
             // swf文件路径
             swf: '/static/plugins/uploader/Uploader.swf',
-          //文件接收服务端
-            server:'',
+            // 文件接收服务端。
+            server: 'http://upload-z1.qiniup.com',
             fileVal:'file',
-            forData:{
+            formData:{
                 "token":"${upToken}"
             },
-
             // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             pick: '#picker',
-            // 只允许选择图片文件。
             accept: {
                 title: 'Images',
                 extensions: 'gif,jpg,jpeg,bmp,png',
                 mimeTypes: 'image/*'
             }
         });
-
         var index = -1;
-
-       uploader.on('uploadStart',function (file) {
-           index = layer.load(1);
-       })
-
-        uploader.on('uploadSuccess',function (file,response) {
+        uploader.on( 'uploadStart', function( file ) {
+            index = layer.load(1);
+        });
+        uploader.on( 'uploadSuccess', function( file,response ) {
             $("#userPhoto").html("");
             var fileName = response.key;
-            var $img = $("<img>").attr("src","http://p7f6tjc1h.bkt.clouddn.com/"+fileName+"-preview");
+            var $img = $("<img>").attr("src","http://p7kqr1fn2.bkt.clouddn.com/"+fileName);
             $img.appendTo($("#userPhoto"));
-
-            //将key存放到隐藏域中
             $("#storeManagerAttachment").val(fileName);
             layer.msg("上传成功");
         });
@@ -185,10 +175,6 @@
         uploader.on( 'uploadComplete', function( file ) {
             layer.close(index);
         });
-
-
-
-
         // 初始化Web Uploader
         var uploader2 = WebUploader.create({
             // 选完文件后，是否自动上传。
@@ -201,10 +187,8 @@
             formData:{
                 "token":"${upToken}"
             },
-            // 选择文件的按钮。可选。
             // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             pick: '#picker2',
-            // 只允许选择图片文件。
             accept: {
                 title: 'Images',
                 extensions: 'gif,jpg,jpeg,bmp,png',
@@ -217,7 +201,7 @@
         uploader2.on( 'uploadSuccess', function( file,response ) {
             $("#storePhoto").html("");
             var fileName = response.key;
-            var $img = $("<img>").attr("src","http://p7f6tjc1h.bkt.clouddn.com/"+fileName+"-preview");
+            var $img = $("<img>").attr("src","http://p7kqr1fn2.bkt.clouddn.com/"+fileName);
             $img.appendTo($("#storePhoto"));
             //将key存放到隐藏域中
             $("#storeAttachment").val(fileName);
@@ -229,9 +213,7 @@
         uploader2.on( 'uploadComplete', function( file ) {
             layer.close(index);
         });
-
     });
-
 
 </script>
 

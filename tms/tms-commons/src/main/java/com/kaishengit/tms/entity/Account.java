@@ -15,6 +15,18 @@ public class Account implements Serializable {
     public static final String STATE_LOCKED = "锁定";
 
 
+    private List<Account> accountList;
+
+    public List<Account> getAccountList() {
+        return accountList;
+    }
+
+    public void setAccountList(List<Account> accountList) {
+        this.accountList = accountList;
+
+
+    }
+
     private Integer id;
 
     private String accountName;

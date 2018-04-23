@@ -3,6 +3,8 @@ package com.kaishengit.tms.mapper;
 import com.kaishengit.tms.entity.Ticket;
 import com.kaishengit.tms.entity.TicketExample;
 import java.util.List;
+
+import com.kaishengit.tms.entity.TicketInRecord;
 import org.apache.ibatis.annotations.Param;
 
 public interface TicketMapper {
@@ -27,4 +29,11 @@ public interface TicketMapper {
     int updateByPrimaryKeySelective(Ticket record);
 
     int updateByPrimaryKey(Ticket record);
+
+    void batchInsert(List<Ticket> ticketList);
+
+    List<TicketInRecord> findAllTicketInRecordByAccountId(Integer id);
+
+    List<Ticket> selectAllTicket();
+
 }

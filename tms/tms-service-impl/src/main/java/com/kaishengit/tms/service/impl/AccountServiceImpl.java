@@ -224,5 +224,17 @@ public class  AccountServiceImpl implements AccountService{
     }
 
 
+    /*
+     *查询所有的账户
+     * @author 马得草
+     * @date 2018/4/21
+     */
+    @Override
+    public List<Account> findAllAccount() {
+        AccountExample accountExample = new AccountExample();
+        return accountMapper.selectByExample(accountExample);
+    }
+
+
 }
 

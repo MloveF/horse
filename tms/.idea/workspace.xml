@@ -33,7 +33,30 @@
     <favorites_list name="tms" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TicketStoreController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="135" column="42" lean-forward="false" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/info.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="81" column="60" lean-forward="false" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,8 +66,9 @@
         <option value="mvc-servlet.xml" />
         <option value="Mapper.xml" />
         <option value="Interface" />
-        <option value="Class" />
+        <option value="Gradle Kotlin DSL Settings" />
         <option value=".jsp" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,57 +86,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountMapper.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/exception/NotFoundException.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/RolePremissionMapper.java" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RoleMapper.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" />
-        <option value="$PROJECT_DIR$/tms-service-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/resources/ehcache.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/error/401.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/exception/ControllerAdviceHandler.java" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/navhead.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/PermissionMapper.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/CustomerFilterChainDefinition.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/tms-finance-web/pom.xml" />
-        <option value="$PROJECT_DIR$/tms-finance-web/src/main/java/com/kaishengit/tms/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/include/navhead.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/RolesController.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolePremissionMapper.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/ShiroRealm.java" />
-        <option value="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/fileStore/QiniuStore.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/home.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java" />
-        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketStoreService.java" />
-        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreAccount.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/StoreAccountMapper.xml" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TicketStoreMapper.xml" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketStoreServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
         <option value="$PROJECT_DIR$/tms-finance-web/src/main/resources/spring-shiro.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/resources/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/util/shiro/ShiroUtil.java" />
+        <option value="$PROJECT_DIR$/tms-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/tms-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/tms-finance-web/pom.xml" />
+        <option value="$PROJECT_DIR$/tms-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/tms-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Ticket.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/exception/NotFoundException.java" />
+        <option value="$PROJECT_DIR$/tms-finance-web/src/main/java/com/kaishengit/tms/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/AccountMapper.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Account.java" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/TicketInRecord.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketService.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/TicketMapper.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TicketMapper.xml" />
+        <option value="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/ticket/storage/new.jsp" />
+        <option value="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/ticket/storage/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-finance-web/src/main/java/com/kaishengit/tms/controller/TicketController.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/fileStore/QiniuStore.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
+        <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreAccount.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/edit.jsp" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketStoreService.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketStoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/info.jsp" />
       </list>
     </option>
   </component>
@@ -140,6 +164,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tms-finance-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tms-finance-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="tms-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -161,7 +194,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="21" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="768" />
     <option name="height" value="696" />
   </component>
@@ -211,10 +245,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,6 +290,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tms" type="b2602c69:ProjectViewProjectNode" />
@@ -335,6 +389,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -346,40 +419,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="manage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tms" type="462c0819:PsiDirectoryNode" />
-              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="manage" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tms" type="b2602c69:ProjectViewProjectNode" />
@@ -470,6 +509,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="fileStore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -478,7 +527,9 @@
               <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tms" type="b2602c69:ProjectViewProjectNode" />
@@ -487,7 +538,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -496,26 +546,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tms-manager-web" />
+    <property name="SearchEverywhereHistoryKey" value="null&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/com/sun/prism/null3d" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.kaishengit.tms.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\tms\tms-manager-web\src\main\webapp\static" />
+      <recent name="E:\git\tms\tms-manager-web\src\main\webapp\static\plugins" />
+      <recent name="E:\git\tms\tms-manager-web\src\main\webapp\static\plugins\uploader" />
       <recent name="E:\git\tms\tms-service-impl\src\main\resources\mapper" />
       <recent name="E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper" />
-      <recent name="E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity" />
-      <recent name="E:\git\tms\tms-finance-web\src\main\java\com\kaishengit\tms\shiro" />
-      <recent name="E:\git\tms\tms-finance-web\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -760,12 +811,21 @@
       <workItem from="1524052180889" duration="5837000" />
       <workItem from="1524097994686" duration="17892000" />
       <workItem from="1524136142612" duration="7402000" />
-      <workItem from="1524184251812" duration="2492000" />
+      <workItem from="1524184251812" duration="19680000" />
+      <workItem from="1524222970490" duration="8519000" />
+      <workItem from="1524231562775" duration="3288000" />
+      <workItem from="1524237278850" duration="764000" />
+      <workItem from="1524271453332" duration="442000" />
+      <workItem from="1524271935362" duration="20791000" />
+      <workItem from="1524376685222" duration="9559000" />
+      <workItem from="1524387679516" duration="2970000" />
+      <workItem from="1524393891968" duration="8632000" />
+      <workItem from="1524443410523" duration="1683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200619000" />
+    <option name="totallyTimeSpent" value="274455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,6 +838,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -785,15 +846,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49429038" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2300163" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17246597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9706362" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4959217" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8858075" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155825" sideWeight="0.490099" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229954" sideWeight="0.490099" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -801,14 +862,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2322239" sideWeight="0.509901" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07667211" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21859707" sideWeight="0.49546143" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25611746" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -819,7 +880,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="53" />
+      <option name="time" value="90" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -828,317 +889,272 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar!/org/apache/shiro/realm/AuthorizingRealm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="79" column="60" lean-forward="true" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="638" column="18" lean-forward="false" selection-start-line="638" selection-start-column="18" selection-end-line="638" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="199" column="40" lean-forward="true" selection-start-line="199" selection-start-column="40" selection-end-line="199" selection-end-column="40" />
+        <state relative-caret-position="4795">
+          <caret line="232" column="25" lean-forward="false" selection-start-line="232" selection-start-column="25" selection-end-line="232" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/AccountLoginLogMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="161">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar!/org/apache/shiro/mgt/DefaultSecurityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/TicketStoreExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/include/sider.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/TicketStoreMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/fileStore/QiniuStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new、.jsp" />
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketStoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketStoreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="42" column="59" lean-forward="true" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="130" column="31" lean-forward="true" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="116" column="21" lean-forward="false" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="344">
+          <caret line="472" column="0" lean-forward="false" selection-start-line="472" selection-start-column="0" selection-end-line="472" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="-275">
+          <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="48" column="81" lean-forward="true" selection-start-line="48" selection-start-column="81" selection-end-line="48" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/RolesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="305" column="66" lean-forward="true" selection-start-line="305" selection-start-column="66" selection-end-line="305" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TicketMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+          <folding>
+            <marker date="1524287175283" expanded="true" signature="4086:4188" ph="select from ticket" />
+            <marker date="1524287175283" expanded="true" signature="4274:4330" ph="delete from ticket... " />
+            <marker date="1524287175283" expanded="true" signature="4435:4453" ph="delete from ticket... " />
+            <marker date="1524287175283" expanded="true" signature="4634:5183" ph="insert into ticket... " />
+            <marker date="1524287175283" expanded="true" signature="7120:7212" ph="insert into tickets... " />
+            <marker date="1524287175283" expanded="true" signature="7544:7571" ph="select count... ticket" />
+            <marker date="1524287175283" expanded="true" signature="7785:7899" ph="SELECT * FRO... ticket_in_record" />
+            <marker date="1524287175283" expanded="true" signature="7995:8015" ph="SELECT * fro... ticket" />
+            <marker date="1524287175283" expanded="true" signature="9503:10133" ph="update ticket... " />
+            <marker date="1524287175283" expanded="true" signature="10345:11403" ph="update ticket... " />
+            <marker date="1524287175283" expanded="true" signature="11504:12067" ph="update ticket... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/TicketMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/java/com/kaishengit/tms/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1959">
+          <caret line="100" column="24" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="58" column="46" lean-forward="false" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        <state relative-caret-position="-800">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/resources/spring-shiro.xml">
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="37" column="15" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/java/com/kaishengit/tms/controller/TicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/ticket/storage/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/ticket/storage/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/resources/spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountLoginLogMapper.xml">
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/resources/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="106" column="2" lean-forward="false" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-          <folding>
-            <marker date="1523535503709" expanded="true" signature="3501:3614" ph="select from account_login_log" />
-            <marker date="1523535503709" expanded="true" signature="3700:3767" ph="delete from account_login_log... " />
-            <marker date="1523535503709" expanded="true" signature="3881:3910" ph="delete from account_login_log... " />
-            <marker date="1523535503709" expanded="true" signature="4100:4309" ph="insert into account_login_log... " />
-            <marker date="1523535503709" expanded="true" signature="5306:5344" ph="select count... account_login_log" />
-            <marker date="1523535503709" expanded="true" signature="6158:6392" ph="update account_login_log... " />
-            <marker date="1523535503709" expanded="true" signature="6613:6990" ph="update account_login_log... " />
-            <marker date="1523535503709" expanded="true" signature="7100:7309" ph="update account_login_log... " />
-          </folding>
+        <state relative-caret-position="-290">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountMapper.xml">
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/util/shiro/ShiroUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="73" column="2" lean-forward="false" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
-          <folding>
-            <marker date="1523878448033" expanded="true" signature="3789:3892" ph="select from account" />
-            <marker date="1523878448033" expanded="true" signature="3978:4035" ph="delete from account... " />
-            <marker date="1523878448033" expanded="true" signature="4141:4160" ph="delete from account... " />
-            <marker date="1523878448033" expanded="true" signature="4342:4726" ph="insert into account... " />
-            <marker date="1523878448033" expanded="true" signature="6283:6311" ph="select count... account" />
-            <marker date="1523878448033" expanded="true" signature="6503:7892" ph="SELECT accou... account" />
-            <marker date="1523878448033" expanded="true" signature="9459:9896" ph="update account... " />
-            <marker date="1523878448033" expanded="true" signature="10109:10837" ph="update account... " />
-            <marker date="1523878448033" expanded="true" signature="10939:11330" ph="update account... " />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountRoleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15921">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/qiniu/qiniu-java-sdk/7.2.8/qiniu-java-sdk-7.2.8.jar!/com/qiniu/util/Auth.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.noimage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1523868995831" expanded="true" signature="3326:3450" ph="delete from account_role... " />
-            <marker date="1523868995831" expanded="true" signature="3560:3584" ph="delete from account_role... " />
-            <marker date="1523868995831" expanded="true" signature="3773:3890" ph="insert into account_role... " />
-            <marker date="1523868995831" expanded="true" signature="4592:4625" ph="select count... account_role" />
-            <marker date="1523868995831" expanded="true" signature="5225:5353" ph="update account_role... " />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1523930441938" expanded="true" signature="3558:3658" ph="select from role" />
-            <marker date="1523930441938" expanded="true" signature="3744:3798" ph="delete from role... " />
-            <marker date="1523930441938" expanded="true" signature="3901:3917" ph="delete from role... " />
-            <marker date="1523930441938" expanded="true" signature="4096:4347" ph="insert into role... " />
-            <marker date="1523930441938" expanded="true" signature="5526:5551" ph="select count... role" />
-            <marker date="1523930441938" expanded="true" signature="5743:6266" ph="SELECT role.... role" />
-            <marker date="1523930441938" expanded="true" signature="6358:6417" ph="SELECT * FRO... role" />
-            <marker date="1523930441938" expanded="true" signature="6512:7035" ph="SELECT role.... role" />
-            <marker date="1523930441938" expanded="true" signature="7136:7371" ph="SELECT * FRO... role" />
-            <marker date="1523930441938" expanded="true" signature="7225:7361" ph="SELECT role_... account_role" />
-            <marker date="1523930441938" expanded="true" signature="8897:9187" ph="update role... " />
-            <marker date="1523930441938" expanded="true" signature="9397:9877" ph="update role... " />
-            <marker date="1523930441938" expanded="true" signature="9976:10234" ph="update role... " />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolePremissionMapper.xml">
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1523926353429" expanded="true" signature="3350:3483" ph="delete from role_premission... " />
-            <marker date="1523926353429" expanded="true" signature="3596:3623" ph="delete from role_premission... " />
-            <marker date="1523926353429" expanded="true" signature="3818:3944" ph="insert into role_premission... " />
-            <marker date="1523926353429" expanded="true" signature="4667:4703" ph="select count... role_premission" />
-            <marker date="1523926353429" expanded="true" signature="5315:5452" ph="update role_premission... " />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/StoreAccountMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="116" column="11" lean-forward="true" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
+        <state relative-caret-position="194">
+          <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
           <folding>
             <marker date="1524140458358" expanded="true" signature="3803:3912" ph="select from store_account" />
             <marker date="1524140458358" expanded="true" signature="3998:4061" ph="delete from store_account... " />
@@ -1152,44 +1168,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/StoreLoginLogMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1524127163836" expanded="true" signature="3512:3623" ph="select from store_login_log" />
-            <marker date="1524127163836" expanded="true" signature="3709:3774" ph="delete from store_login_log... " />
-            <marker date="1524127163836" expanded="true" signature="3886:3913" ph="delete from store_login_log... " />
-            <marker date="1524127163836" expanded="true" signature="4101:4321" ph="insert into store_login_log... " />
-            <marker date="1524127163836" expanded="true" signature="5335:5371" ph="select count... store_login_log" />
-            <marker date="1524127163836" expanded="true" signature="6201:6446" ph="update store_login_log... " />
-            <marker date="1524127163836" expanded="true" signature="6665:7058" ph="update store_login_log... " />
-            <marker date="1524127163836" expanded="true" signature="7166:7386" ph="update store_login_log... " />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TicketMapper.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-2716">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1524127169564" expanded="true" signature="4086:4188" ph="select from ticket" />
-            <marker date="1524127169564" expanded="true" signature="4274:4330" ph="delete from ticket... " />
-            <marker date="1524127169564" expanded="true" signature="4435:4453" ph="delete from ticket... " />
-            <marker date="1524127169564" expanded="true" signature="4634:5183" ph="insert into ticket... " />
-            <marker date="1524127169564" expanded="true" signature="7200:7227" ph="select count... ticket" />
-            <marker date="1524127169564" expanded="true" signature="8806:9436" ph="update ticket... " />
-            <marker date="1524127169564" expanded="true" signature="9648:10706" ph="update ticket... " />
-            <marker date="1524127169564" expanded="true" signature="10807:11370" ph="update ticket... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TicketStoreMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="125" column="11" lean-forward="true" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="11" />
+        <state relative-caret-position="119">
+          <caret line="79" column="2" lean-forward="false" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
           <folding>
             <marker date="1524140493730" expanded="true" signature="4341:4449" ph="select from ticket_store" />
             <marker date="1524140493730" expanded="true" signature="4535:4597" ph="delete from ticket_store... " />
@@ -1203,108 +1200,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.0/guava-23.0.jar!/com/google/common/base/Predicate.class">
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/TicketStoreMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="194">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/mvc-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/ShiroRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="44" column="77" lean-forward="true" selection-start-line="44" selection-start-column="77" selection-end-line="44" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/resources/spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml">
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/TicketStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="75" column="2" lean-forward="false" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
-          <folding>
-            <marker date="1524019302093" expanded="true" signature="3902:4008" ph="select from permission" />
-            <marker date="1524019302093" expanded="true" signature="4094:4154" ph="delete from permission... " />
-            <marker date="1524019302093" expanded="true" signature="4263:4285" ph="delete from permission... " />
-            <marker date="1524019302093" expanded="true" signature="4470:4906" ph="insert into permission... " />
-            <marker date="1524019302093" expanded="true" signature="6598:6629" ph="select count... permission" />
-            <marker date="1524019302093" expanded="true" signature="6831:7083" ph="SELECT * FRO... permission" />
-            <marker date="1524019302093" expanded="true" signature="6926:7071" ph="SELECT premi... role_premission" />
-            <marker date="1524019302093" expanded="true" signature="8329:8832" ph="update permission... " />
-            <marker date="1524019302093" expanded="true" signature="9048:9888" ph="update permission... " />
-            <marker date="1524019302093" expanded="true" signature="9993:10443" ph="update permission... " />
-          </folding>
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/PermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/org/mybatis/spring/MyBatisExceptionTranslator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/org/mybatis/spring/SqlSessionTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="312" column="0" lean-forward="true" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding>
-            <element signature="e#8466#8467#0" expanded="true" />
-            <element signature="e#8526#8527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/CustomerFilterChainDefinition.java">
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/fileStore/QiniuStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="74" column="38" lean-forward="false" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3521">
+          <caret line="203" column="79" lean-forward="false" selection-start-line="203" selection-start-column="46" selection-end-line="203" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="12" column="63" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="59" column="14" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/StoreAccountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketStoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="151" column="40" lean-forward="false" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
           <folding>
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#3607#3608#0" expanded="true" />
+            <element signature="e#3671#3672#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketStoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="135" column="42" lean-forward="false" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="81" column="60" lean-forward="false" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1362,7 +1359,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>tms-manager-web</last-edited>
+          <last-edited>tms-service-impl</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

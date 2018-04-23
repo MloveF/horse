@@ -12,4 +12,6 @@ com\kaishengit\tms\service\impl\TicketServiceImpl.class
 com\kaishengit\tms\mapper\TicketStoreMapper.class
 com\kaishengit\tms\mapper\TicketMapper.class
 com\kaishengit\tms\mapper\RolePremissionMapper.class
+com\kaishengit\tms\mapper\TicketInRecordMapper.class
 com\kaishengit\tms\service\impl\TicketStoreServiceImpl.class
+com\kaishengit\tms\util\shiro\ShiroUtil.class

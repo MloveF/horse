@@ -30,4 +30,6 @@ public interface AccountMapper {
     int updateByPrimaryKey(Account record);
 
     List<Account> findAllWithRolesByQueryParam(Map<String, Object> requestParam);
+
+
 }
