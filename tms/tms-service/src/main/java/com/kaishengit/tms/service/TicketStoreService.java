@@ -4,6 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.kaishengit.tms.entity.StoreAccount;
 import com.kaishengit.tms.entity.TicketStore;
 
+import java.util.List;
 import java.util.Map;
 
 
@@ -54,4 +55,34 @@ public interface TicketStoreService {
      * @date 2018/4/22
      */
     void editStroeAccountState(Integer id);
+
+    /*
+     *根据TicketStore的ID查找对应的StoreAccount对象
+     * @date 2018/4/23
+     * @param
+     * @return
+     */
+    StoreAccount findStoreAccountByTicketStoreId(Integer id);
+
+    /*
+     *把StroeAccount的状态修改为正常（normal）
+     * @author 马得草
+     * @date 2018/4/23
+     */
+    void normalAccountState(Integer id);
+
+
+    /*
+     *根据售票点的ID删除售票点和售票账户
+     * @author 马得草
+     * @date 2018/4/23
+     */
+    void delTicketStoreWithAccountById(Integer id);
+
+    /**
+     * 查询所有的售票点
+     * @return
+     */
+    List<TicketStore> findAllTicketStore();
+
 }

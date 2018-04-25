@@ -1,6 +1,7 @@
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\exception\ControllerAdviceHandler.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\RolesController.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\PermissionController.java
+E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\fileStore\QiniuStore.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\shiro\CustomerFilterChainDefinition.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\controller\AccountController.java
 E:\git\tms\tms-manager-web\src\main\java\com\kaishengit\tms\shiro\ShiroRealm.java

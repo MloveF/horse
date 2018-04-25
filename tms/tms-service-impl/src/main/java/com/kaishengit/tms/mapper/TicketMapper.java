@@ -3,6 +3,7 @@ package com.kaishengit.tms.mapper;
 import com.kaishengit.tms.entity.Ticket;
 import com.kaishengit.tms.entity.TicketExample;
 import java.util.List;
+import java.util.Map;
 
 import com.kaishengit.tms.entity.TicketInRecord;
 import org.apache.ibatis.annotations.Param;
@@ -35,5 +36,14 @@ public interface TicketMapper {
     List<TicketInRecord> findAllTicketInRecordByAccountId(Integer id);
 
     List<Ticket> selectAllTicket();
+
+    List<Ticket> findByBeginNumAndEndNumAndState(@Param("beginNum") String beginNum,
+                                                 @Param("endNum") String endNum,
+                                                 @Param("state") String state);
+    void batchDeleteById(@Param("idList") List<Long> idList);
+
+    List<Ticket> findByBeginNumAndEndNum(@Param("beginNum") String beginNum,@Param("endNum") String endNum);
+
+    Map<String,Long> countByState();
 
 }

@@ -101,6 +101,15 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
+
+  <delete id="deletStoreAccountByTicketStoreId">
+      DELETE
+        FROM
+	store_account
+        WHERE
+	ticket_store_id = #{id}
+  </delete>
+
   <insert id="insert" parameterType="com.kaishengit.tms.entity.StoreAccount">
     insert into store_account (id, store_account, store_password, 
       create_time, update_time, store_state, 
@@ -164,7 +173,17 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map">
+
+    <select id="selectStoreAccountByTicketStoreId" resultType="com.kaishengit.tms.entity.StoreAccount">
+        SELECT
+	    *
+          FROM
+	        store_account
+      WHERE
+	      ticket_store_id = #{id};
+      </select>
+
+    <update id="updateByExampleSelective" parameterType="map">
     update store_account
     <set>
       <if test="record.id != null">

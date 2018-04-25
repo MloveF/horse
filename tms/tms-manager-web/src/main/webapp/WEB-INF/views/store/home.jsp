@@ -72,7 +72,9 @@
                         </tbody>
                     </table>
                     共${pageInfo.total}条数据
+                    <c:if test="${page.pages > 1}">
                     <ul id="pagination-demo" class="pagination pull-right"></ul>
+                    </c:if>
                 </div>
             </div>
         </section>

@@ -4,6 +4,7 @@ E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\Role.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\StoreLoginLog.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\Ticket.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\Permission.java
+E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\TicketOutRecordExample.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\StoreAccountExample.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\exception\ServiceException.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\TicketInRecordExample.java
@@ -12,6 +13,7 @@ E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\AccountRoleExampl
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\dto\ResponseBean.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\RolePremissionExample.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\TicketInRecord.java
+E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\TicketOutRecord.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\Account.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\StoreLoginLogExample.java
 E:\git\tms\tms-commons\src\main\java\com\kaishengit\tms\entity\TicketStoreExample.java

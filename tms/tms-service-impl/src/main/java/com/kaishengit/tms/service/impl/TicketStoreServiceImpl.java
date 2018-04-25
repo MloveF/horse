@@ -152,4 +152,65 @@ public class TicketStoreServiceImpl implements TicketStoreService {
       storeAccountMapper.updateByPrimaryKeySelective(storeAccount);
 
     }
+
+
+    /*
+     *根据TicketStore的ID查找对应的StoreAccount对象
+     * @author 马得草
+     * @date 2018/4/23
+     */
+    @Override
+    public StoreAccount findStoreAccountByTicketStoreId(Integer id) {
+       return storeAccountMapper.selectStoreAccountByTicketStoreId(id);
+
+    }
+
+
+    /*
+     *把StroeAccount的状态修改为正常（normal）
+     * @author 马得草
+     * @date 2018/4/23
+     */
+    @Override
+    public void normalAccountState(Integer id) {
+        TicketStore ticketStore = ticketStoreMapper.selectByPrimaryKey(id);
+        StoreAccount storeAccount = storeAccountMapper.selectByPrimaryKey(ticketStore.getStoreAccountId());
+
+        storeAccount.setStoreState("normal");
+
+
+        storeAccountMapper.updateByPrimaryKeySelective(storeAccount);
+
+
+    }
+
+
+    /*
+     *根据售票点的ID删除售票点和售票账户
+     * @author 马得草
+     * @date 2018/4/23
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void delTicketStoreWithAccountById(Integer id) {
+        //删除售票点
+        ticketStoreMapper.deleteByPrimaryKey(id);
+        //删除对应的账户
+        storeAccountMapper.deletStoreAccountByTicketStoreId(id);
+
+
+    }
+
+    /**
+     * 查询所有的售票点
+     *
+     * @return
+     */
+    @Override
+    public List<TicketStore> findAllTicketStore() {
+
+        TicketStoreExample ticketStoreExample = new TicketStoreExample();
+        ticketStoreExample.setOrderByClause("id desc");
+        return ticketStoreMapper.selectByExample(ticketStoreExample);
+    }
 }

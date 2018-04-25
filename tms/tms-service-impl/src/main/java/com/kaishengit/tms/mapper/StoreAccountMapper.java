@@ -27,4 +27,8 @@ public interface StoreAccountMapper {
     int updateByPrimaryKeySelective(StoreAccount record);
 
     int updateByPrimaryKey(StoreAccount record);
+
+    StoreAccount selectStoreAccountByTicketStoreId(Integer id);
+
+    void deletStoreAccountByTicketStoreId(Integer id);
 }

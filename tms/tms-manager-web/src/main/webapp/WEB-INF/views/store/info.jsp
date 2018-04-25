@@ -49,7 +49,7 @@
                     <h3 class="box-title">售票点信息</h3>
                     <div class="box-tools">
                         <a href="/ticketstore/${ticketStore.id}/edit" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> 编辑</a>
-                        <a href="javascript:;" rel="${ticketStore.id}" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> 删除</a>
+                        <a href="javascript:;" rel="${ticketStore.id}" class="btn btn-danger btn-sm delLink"><i class="fa fa-trash"></i> 删除</a>
                     </div>
                 </div>
                 <div class="box-body">
@@ -78,9 +78,14 @@
                     <h3 class="box-title">关联账号</h3>
                     <div class="box-tools">
 
+
+                     <%--   <c:if test="${storeAccount.storeState == 'disable'}">
+                            <a href="/ticketstore/${ticketStore.id}/disable" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> 禁用账号</a>
+                        </c:if>--%>
+
                         <c:choose>
-                            <c:when test="${message} == 修改成功">
-                                <a href="/ticketstore/${ticketStore.id}/qiyong" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> 启用账号</a>
+                            <c:when test="${storeAccount.storeState == 'disable'}">
+                                <a href="/ticketstore/${ticketStore.id}/normal" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> 启用账号</a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/ticketstore/${ticketStore.id}/disable" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> 禁用账号</a>
@@ -130,8 +135,26 @@
 <!-- ./wrapper -->
 
 <%@include file="../include/js.jsp"%>
+<script src="/static/plugins/layer/layer.js"></script>
 <script>
     $(function () {
+
+        $(".delLink").click(function(){
+            var id = $(this).attr("rel");
+            layer.confirm("确定要删除吗",function (index) {
+                layer.close(index);
+                $.get("/ticketstore/"+id+"/del").done(function (result) {
+                    if(result.status == 'success') {
+                      /*  history.go(-1);*/
+                        location.href=document.referrer;
+                    } else {
+                        layer.msg(result.message);
+                    }
+                }).error(function () {
+                    layer.msg("服务器忙");
+                });
+            })
+        });
     });
 </script>
 </body>

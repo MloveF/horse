@@ -4,8 +4,10 @@ package com.kaishengit.tms.controller;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Maps;
 import com.kaishengit.tms.controller.exception.NotFoundException;
+import com.kaishengit.tms.dto.ResponseBean;
 import com.kaishengit.tms.entity.StoreAccount;
 import com.kaishengit.tms.entity.TicketStore;
+import com.kaishengit.tms.exception.ServiceException;
 import com.kaishengit.tms.fileStore.QiniuStore;
 import com.kaishengit.tms.service.TicketStoreService;
 import com.qiniu.util.Auth;
@@ -132,10 +134,33 @@ public class TicketStoreController {
     public String disableAccount(@PathVariable Integer id, Model model, RedirectAttributes redirectAttributes) {
 
         ticketStoreService.editStroeAccountState(id);
+        StoreAccount storeAccount = ticketStoreService.findStoreAccountByTicketStoreId(id);
 
-        model.addAttribute("message","修改成功");
-        redirectAttributes.addFlashAttribute("message","修改成功");
+        model.addAttribute("storeAccount",storeAccount);
         return "redirect:/ticketstore";
+    }
+
+    @GetMapping("/{id:\\d+}/normal")
+    public String normalAccount(@PathVariable Integer id, Model model, RedirectAttributes redirectAttributes) {
+
+        ticketStoreService.normalAccountState(id);
+        StoreAccount storeAccount = ticketStoreService.findStoreAccountByTicketStoreId(id);
+
+        model.addAttribute("storeAccount",storeAccount);
+        return "redirect:/ticketstore";
+    }
+
+
+    @GetMapping("/{id:\\d+}/del")
+    public @ResponseBody
+    ResponseBean deleteRoles(@PathVariable Integer id) {
+
+        try {
+            ticketStoreService.delTicketStoreWithAccountById(id);
+            return ResponseBean.success();
+        }catch (ServiceException e) {
+            return ResponseBean.error(e.getMessage());
+        }
     }
 
 

@@ -1,14 +1,13 @@
 package com.kaishengit.tms.controller;
 
 
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.tms.dto.ResponseBean;
-import com.kaishengit.tms.entity.Account;
-import com.kaishengit.tms.entity.AccountExample;
-import com.kaishengit.tms.entity.Ticket;
-import com.kaishengit.tms.entity.TicketInRecord;
+import com.kaishengit.tms.entity.*;
 import com.kaishengit.tms.exception.ServiceException;
 import com.kaishengit.tms.service.AccountService;
 import com.kaishengit.tms.service.TicketService;
+import com.kaishengit.tms.service.TicketStoreService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.joda.time.DateTime;
@@ -22,6 +21,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/ticket")
@@ -32,6 +32,9 @@ public class TicketController {
 
     @Autowired
     private AccountService accountService;
+
+    @Autowired
+    private TicketStoreService ticketStoreService;
     /*
      *年票入库首页
      * @author 马得草
@@ -71,6 +74,10 @@ public class TicketController {
 
         int beginNum =  Integer.parseInt(ticketInRecord.getBeginTicketNum());
         int endNum = Integer.parseInt(ticketInRecord.getEndTicketNum());
+        if(endNum <= beginNum ) {
+            redirectAttributes.addFlashAttribute("message","Incorrect input format");
+            return "redirect:/ticket/storage/new";
+        }
 
         for(Ticket ticket : ticketList) {
             if(ticket.getId()<= endNum && ticket.getId()>=beginNum ) {
@@ -105,5 +112,67 @@ public class TicketController {
     }
 
 
+    /*   
+     *年票下发首页
+     * @author 马得草  
+     * @date 2018/4/23   
+     */
+    @GetMapping("/out")
+    public String ticketOutHome(Model model,
+                                @RequestParam(name = "p",required = false,defaultValue = "1") Integer pageNo) {
+
+        PageInfo<TicketOutRecord> pageInfo = ticketService.findTicketOutRecordByPageNo(pageNo);
+        model.addAttribute("page",pageInfo);
+        return "ticket/out/home";
+        
+    }
+
+
+    /*
+     *新增下发
+     * @author 马得草
+     * @date 2018/4/23
+     */
+    @GetMapping("/out/new")
+    public String newTicketOut(Model model) {
+
+        String today = DateTime.now().toString("YYYY-MM-dd");
+        //查看所有的售票点
+        List<TicketStore> ticketStoreList = ticketStoreService.findAllTicketStore();
+
+        model.addAttribute("today",today);
+        model.addAttribute("ticketStoreList",ticketStoreList);
+        return "ticket/out/new";
+    }
+
+
+    @PostMapping("/out/new")
+    public String newTicketOut(TicketOutRecord ticketOutRecord,RedirectAttributes redirectAttributes) {
+
+        try {
+            ticketService.saveTicketOutRecord(ticketOutRecord);
+        } catch (ServiceException ex) {
+            redirectAttributes.addFlashAttribute("message",ex.getMessage());
+        }
+        return "redirect:/ticket/out";
+
+    }
+
+
+    @GetMapping("/chart")
+    public String chartHome(Model model) {
+        Map<String,Long> resultMap = ticketService.countTicketByState();
+        model.addAttribute("resultMap",resultMap);
+        return "ticket/chart/home";
+    }
+
+
+    @GetMapping("/out/{id:\\d+}/del")
+    @ResponseBody
+    public ResponseBean  delTicketOut(@PathVariable Integer id) {
+
+        ticketService.delOutRecordById(id);
+        return ResponseBean.success();
+    }
 
 }

@@ -1,7 +1,9 @@
 com\kaishengit\tms\entity\TicketInRecordExample$Criterion.class
+com\kaishengit\tms\entity\TicketOutRecordExample$Criteria.class
 com\kaishengit\tms\entity\RoleExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\PermissionExample$Criteria.class
 com\kaishengit\tms\entity\RoleExample$Criterion.class
+com\kaishengit\tms\entity\TicketOutRecordExample.class
 com\kaishengit\tms\entity\StoreLoginLogExample.class
 com\kaishengit\tms\entity\TicketStore.class
 com\kaishengit\tms\entity\StoreAccountExample$Criterion.class
@@ -20,6 +22,7 @@ com\kaishengit\tms\dto\ResponseBean.class
 com\kaishengit\tms\entity\AccountRoleExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\TicketExample$Criteria.class
 com\kaishengit\tms\entity\PermissionExample$GeneratedCriteria.class
+com\kaishengit\tms\entity\TicketOutRecordExample$Criterion.class
 com\kaishengit\tms\entity\AccountExample$Criteria.class
 com\kaishengit\tms\entity\AccountRoleKey.class
 com\kaishengit\tms\entity\RolePremissionExample$Criterion.class
@@ -28,6 +31,7 @@ com\kaishengit\tms\entity\AccountLoginLogExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\StoreLoginLogExample$Criteria.class
 com\kaishengit\tms\entity\AccountExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\RolePremissionExample$GeneratedCriteria.class
+com\kaishengit\tms\entity\TicketOutRecord.class
 com\kaishengit\tms\entity\RoleExample$Criteria.class
 com\kaishengit\tms\entity\RolePremissionExample$Criteria.class
 com\kaishengit\tms\entity\AccountLoginLogExample.class
@@ -53,6 +57,7 @@ com\kaishengit\tms\entity\StoreLoginLogExample$Criterion.class
 com\kaishengit\tms\entity\AccountExample.class
 com\kaishengit\tms\entity\rolePermission.class
 com\kaishengit\tms\entity\Account.class
+com\kaishengit\tms\entity\TicketOutRecordExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\AccountLoginLogExample$Criterion.class
 com\kaishengit\tms\entity\Permission.class
 com\kaishengit\tms\entity\TicketExample$GeneratedCriteria.class
