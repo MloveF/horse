@@ -8,8 +8,6 @@ import com.kaishengit.tms.mapper.*;
 import com.kaishengit.tms.service.TicketService;
 import com.kaishengit.tms.util.shiro.ShiroUtil;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +32,7 @@ public class TicketServiceImpl implements TicketService {
 
     private static final Logger logger = LoggerFactory.getLogger(TicketServiceImpl.class);
 
+
     @Autowired
     private ShiroUtil shiroUtil;
 
@@ -53,7 +52,7 @@ public class TicketServiceImpl implements TicketService {
 
 
 
-    /*   
+    /*
      *保存一个入库记录
      * @author 马得草  
      * @date 2018/4/20   
@@ -81,7 +80,7 @@ public class TicketServiceImpl implements TicketService {
 
         ticketInRecordMapper.insertSelective(ticketInRecord);
 
-        logger.info("新增年票入库： {} 入库人：{}",ticketInRecord,account);
+        logger.info("新增年票入库： {} 入库人：{}",ticketInRecord);
 
         //添加totalNum条年票记录
         List<Ticket> ticketList = new ArrayList<>();
@@ -320,5 +319,17 @@ public class TicketServiceImpl implements TicketService {
             }
         }
 
+    }
+
+
+    /*
+     *根据售票点ID查询年票数量
+     * @date 2018/4/27
+     * @param
+     * @return
+     */
+    @Override
+    public Map<String, Long> countTicketByStateAndStoreAccountId(Integer id) {
+        return ticketMapper.countByStateAndStoreAccountId(id);
     }
 }

@@ -22,7 +22,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/ticketstore")
-public class TicketStoreController {
+public class    TicketStoreController {
 
     @Autowired
     private TicketStoreService ticketStoreService;

@@ -2,6 +2,7 @@ package com.kaishengit.tms.service;
 
 
 import com.github.pagehelper.PageInfo;
+import com.kaishengit.tms.entity.Account;
 import com.kaishengit.tms.entity.Ticket;
 import com.kaishengit.tms.entity.TicketInRecord;
 import com.kaishengit.tms.entity.TicketOutRecord;
@@ -94,4 +95,12 @@ public interface TicketService {
      * @param payType
      */
     void payTicketOutRecord(Integer id, String payType);
+
+    /*
+     *根据售票点ID查询年票数量
+     * @date 2018/4/27
+     * @param
+     * @return
+     */
+    Map<String,Long> countTicketByStateAndStoreAccountId(Integer id);
 }

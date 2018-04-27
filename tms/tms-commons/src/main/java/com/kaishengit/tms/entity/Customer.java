@@ -1,0 +1,191 @@
+package com.kaishengit.tms.entity;
+
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ * customer
+ * @author 
+ */
+public class Customer extends CustomerKey implements Serializable {
+    private String customerName;
+
+    private String customerIdCard;
+
+    private String customerIdCardPhoto;
+
+    private String customerIdCardPhotoBack;
+
+    private Date createTime;
+
+    private Date updateTime;
+
+    private String customerPhoto;
+
+    private String customerTel;
+
+    private String customerAddress;
+
+    private Integer cuetomerAge;
+
+    private String customerGender;
+
+    private static final long serialVersionUID = 1L;
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCustomerIdCard() {
+        return customerIdCard;
+    }
+
+    public void setCustomerIdCard(String customerIdCard) {
+        this.customerIdCard = customerIdCard;
+    }
+
+    public String getCustomerIdCardPhoto() {
+        return customerIdCardPhoto;
+    }
+
+    public void setCustomerIdCardPhoto(String customerIdCardPhoto) {
+        this.customerIdCardPhoto = customerIdCardPhoto;
+    }
+
+    public String getCustomerIdCardPhotoBack() {
+        return customerIdCardPhotoBack;
+    }
+
+    public void setCustomerIdCardPhotoBack(String customerIdCardPhotoBack) {
+        this.customerIdCardPhotoBack = customerIdCardPhotoBack;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getCustomerPhoto() {
+        return customerPhoto;
+    }
+
+    public void setCustomerPhoto(String customerPhoto) {
+        this.customerPhoto = customerPhoto;
+    }
+
+    public String getCustomerTel() {
+        return customerTel;
+    }
+
+    public void setCustomerTel(String customerTel) {
+        this.customerTel = customerTel;
+    }
+
+    public String getCustomerAddress() {
+        return customerAddress;
+    }
+
+    public void setCustomerAddress(String customerAddress) {
+        this.customerAddress = customerAddress;
+    }
+
+    public Integer getCuetomerAge() {
+        return cuetomerAge;
+    }
+
+    public void setCuetomerAge(Integer cuetomerAge) {
+        this.cuetomerAge = cuetomerAge;
+    }
+
+    public String getCustomerGender() {
+        return customerGender;
+    }
+
+    public void setCustomerGender(String customerGender) {
+        this.customerGender = customerGender;
+    }
+
+    @Override
+    public boolean equals(Object that) {
+        if (this == that) {
+            return true;
+        }
+        if (that == null) {
+            return false;
+        }
+        if (getClass() != that.getClass()) {
+            return false;
+        }
+        Customer other = (Customer) that;
+        return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
+            && (this.getTicketId() == null ? other.getTicketId() == null : this.getTicketId().equals(other.getTicketId()))
+            && (this.getCustomerName() == null ? other.getCustomerName() == null : this.getCustomerName().equals(other.getCustomerName()))
+            && (this.getCustomerIdCard() == null ? other.getCustomerIdCard() == null : this.getCustomerIdCard().equals(other.getCustomerIdCard()))
+            && (this.getCustomerIdCardPhoto() == null ? other.getCustomerIdCardPhoto() == null : this.getCustomerIdCardPhoto().equals(other.getCustomerIdCardPhoto()))
+            && (this.getCustomerIdCardPhotoBack() == null ? other.getCustomerIdCardPhotoBack() == null : this.getCustomerIdCardPhotoBack().equals(other.getCustomerIdCardPhotoBack()))
+            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
+            && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()))
+            && (this.getCustomerPhoto() == null ? other.getCustomerPhoto() == null : this.getCustomerPhoto().equals(other.getCustomerPhoto()))
+            && (this.getCustomerTel() == null ? other.getCustomerTel() == null : this.getCustomerTel().equals(other.getCustomerTel()))
+            && (this.getCustomerAddress() == null ? other.getCustomerAddress() == null : this.getCustomerAddress().equals(other.getCustomerAddress()))
+            && (this.getCuetomerAge() == null ? other.getCuetomerAge() == null : this.getCuetomerAge().equals(other.getCuetomerAge()))
+            && (this.getCustomerGender() == null ? other.getCustomerGender() == null : this.getCustomerGender().equals(other.getCustomerGender()));
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
+        result = prime * result + ((getTicketId() == null) ? 0 : getTicketId().hashCode());
+        result = prime * result + ((getCustomerName() == null) ? 0 : getCustomerName().hashCode());
+        result = prime * result + ((getCustomerIdCard() == null) ? 0 : getCustomerIdCard().hashCode());
+        result = prime * result + ((getCustomerIdCardPhoto() == null) ? 0 : getCustomerIdCardPhoto().hashCode());
+        result = prime * result + ((getCustomerIdCardPhotoBack() == null) ? 0 : getCustomerIdCardPhotoBack().hashCode());
+        result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
+        result = prime * result + ((getUpdateTime() == null) ? 0 : getUpdateTime().hashCode());
+        result = prime * result + ((getCustomerPhoto() == null) ? 0 : getCustomerPhoto().hashCode());
+        result = prime * result + ((getCustomerTel() == null) ? 0 : getCustomerTel().hashCode());
+        result = prime * result + ((getCustomerAddress() == null) ? 0 : getCustomerAddress().hashCode());
+        result = prime * result + ((getCuetomerAge() == null) ? 0 : getCuetomerAge().hashCode());
+        result = prime * result + ((getCustomerGender() == null) ? 0 : getCustomerGender().hashCode());
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", customerName=").append(customerName);
+        sb.append(", customerIdCard=").append(customerIdCard);
+        sb.append(", customerIdCardPhoto=").append(customerIdCardPhoto);
+        sb.append(", customerIdCardPhotoBack=").append(customerIdCardPhotoBack);
+        sb.append(", createTime=").append(createTime);
+        sb.append(", updateTime=").append(updateTime);
+        sb.append(", customerPhoto=").append(customerPhoto);
+        sb.append(", customerTel=").append(customerTel);
+        sb.append(", customerAddress=").append(customerAddress);
+        sb.append(", cuetomerAge=").append(cuetomerAge);
+        sb.append(", customerGender=").append(customerGender);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
+    }
+}

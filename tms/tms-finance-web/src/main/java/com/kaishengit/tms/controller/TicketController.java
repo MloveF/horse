@@ -11,15 +11,12 @@ import com.kaishengit.tms.service.TicketStoreService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.joda.time.DateTime;
-import org.omg.PortableInterceptor.INACTIVE;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -35,6 +32,8 @@ public class TicketController {
 
     @Autowired
     private TicketStoreService ticketStoreService;
+
+
     /*
      *年票入库首页
      * @author 马得草
@@ -63,6 +62,7 @@ public class TicketController {
 
     @PostMapping("/storage/new")
     public String newTicketStorage(TicketInRecord ticketInRecord, RedirectAttributes redirectAttributes) {
+
         String begin = ticketInRecord.getBeginTicketNum();
         String end = ticketInRecord.getEndTicketNum();
         if(begin == "" || end == "") {
@@ -85,7 +85,6 @@ public class TicketController {
                 return "redirect:/ticket/storage/new";
             }
         }
-
         ticketService.saveTicketInRecord(ticketInRecord);
 
         redirectAttributes.addFlashAttribute("message","New success");

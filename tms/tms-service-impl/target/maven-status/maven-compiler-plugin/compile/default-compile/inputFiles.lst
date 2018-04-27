@@ -8,11 +8,14 @@ E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\service\impl\Ticket
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\AccountRoleMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\PermissionMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\TicketInRecordMapper.java
+E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\App.java
+E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\TicketOrderMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\TicketMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\RoleMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\StoreLoginLogMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\AccountLoginLogMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\service\impl\AccountServiceImpl.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\fileStore\QiniuStore.java
+E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\mapper\CustomerMapper.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\service\impl\RolePermissionServiceImpl.java
 E:\git\tms\tms-service-impl\src\main\java\com\kaishengit\tms\service\impl\TicketStoreServiceImpl.java

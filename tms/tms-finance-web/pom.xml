@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>com.kaishengit</groupId>
-            <artifactId>tms-service</artifactId>
+            <artifactId>tms-service-impl</artifactId>
         </dependency>
 
         <dependency>

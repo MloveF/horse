@@ -46,4 +46,5 @@ public interface TicketMapper {
 
     Map<String,Long> countByState();
 
+    Map<String,Long> countByStateAndStoreAccountId(Integer id);
 }
