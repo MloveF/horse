@@ -13,7 +13,7 @@ public class HelloWorld {
     @Test
     public void hello() {
         //如果要连接远程的redis，需要修改redis的配置文件 bind=指定ip或0.0.0.0(生成环境勿用)
-        Jedis jedis = new Jedis("192.168.0.112",6379);
+        Jedis jedis = new Jedis("192.168.1.112",6379);
         String pong = jedis.ping();
         System.out.println(pong);
         jedis.close();
@@ -21,7 +21,7 @@ public class HelloWorld {
 
     @Test
     public void setString() {
-        Jedis jedis = new Jedis("192.168.0.112",6379);
+        Jedis jedis = new Jedis("192.168.1.112",6379);
         jedis.set("name:1","jack");
         String name = jedis.get("name:1");
         Assert.assertEquals(name,"jack");
@@ -30,14 +30,14 @@ public class HelloWorld {
 
     @Test
     public void lpush() {
-        Jedis jedis = new Jedis("192.168.0.112",6379);
+        Jedis jedis = new Jedis("192.168.1.112",6379);
         jedis.lpush("name:1:age","12","23","34","21","22","15");
         jedis.close();
     }
 
     @Test
     public void lrange() {
-        Jedis jedis = new Jedis("192.168.0.112",6379);
+        Jedis jedis = new Jedis("192.168.1.112",6379);
         List<String> result = jedis.lrange("name:1:age",0,-1);
         for(String str  :result) {
             System.out.println(str);
@@ -47,7 +47,7 @@ public class HelloWorld {
 
     @Test
     public void zadd() {
-        Jedis jedis = new Jedis("192.168.0.112",6379);
+        Jedis jedis = new Jedis("192.168.1.112",6379);
         jedis.zadd("class:1001",89,"tom");
         double score = jedis.zscore("class:1001","tom");
         System.out.println(score);
@@ -60,7 +60,7 @@ public class HelloWorld {
         poolConfig.setMaxTotal(10);
         poolConfig.setMinIdle(5);
 
-        JedisPool jedisPool = new JedisPool(poolConfig,"192.168.0.112",6379);
+        JedisPool jedisPool = new JedisPool(poolConfig,"192.168.1.112",6379);
         Jedis jedis = jedisPool.getResource();
 
         jedis.del("name:1");
