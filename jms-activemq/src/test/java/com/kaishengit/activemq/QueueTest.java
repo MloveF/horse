@@ -7,7 +7,7 @@ import org.junit.Test;
 import javax.jms.*;
 import java.io.IOException;
 
-public class HelloTest {
+public class QueueTest {
 
 
     /*
